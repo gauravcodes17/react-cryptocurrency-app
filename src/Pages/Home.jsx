@@ -1,15 +1,15 @@
 import React from "react";
 import Banner from "../components/Banner/Banner";
 import CoinsTable from "../components/CoinsTable";
-import { CryptoState } from "../CryptoContext";
-import { CircularProgress } from "@material-ui/core";
+//import { CryptoState } from "../CryptoContext";
+//import { CircularProgress } from "@material-ui/core";
 
 const Home = () => {
-  const { loader } = CryptoState();
+  //const { loader } = CryptoState();
 
   return (
     <>
-      {loader ? (
+      {/*loader ? (
         <CircularProgress
           style={{
             color: "#1abc9c",
@@ -28,7 +28,9 @@ const Home = () => {
           <Banner />
           <CoinsTable />
         </>
-      )}
+      )*/}
+      <Banner />
+      <CoinsTable />
     </>
   );
 };
